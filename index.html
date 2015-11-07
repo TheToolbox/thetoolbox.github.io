@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Hackathon Hack</title>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>My Hackathon Hack</h1>
+	</header>
+	<main>
+		<div id="map">
+
+		</div>
+		<div id="interface">
+			<span id="coordinates">42.0000203,-46.000023</span>
+			<input type="tel" id="phonenumber" placeholder="(919)-867-5309">
+			<button id="starter">Start the trouble timer</button>
+			<span id="countdown">10 seconds</span>
+		</div>
+		<div id="test">
+
+		</div>
+	</main>
+</body>
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+	body {
+		margin: 0;
+		font-family: 'Roboto', sans-serif;
+		font-size: 40px;
+	}
+	
+	h1 {
+		text-align: center;
+		position: absolute;
+		width: 100%;
+		margin: 10px;
+	}
+	
+	#map {
+		text-align: center;
+		background-color: teal;
+		min-height: 60vh;
+		margin-bottom: 10px;
+	}
+	
+	#phonenumber {
+		margin: auto;
+		display: block;
+		font-size: 40px;
+		margin-bottom: 10px;
+		max-width: 300px;
+		width: 90%;
+	}
+	
+	::-webkit-input-placeholder {
+		text-align: center;
+	}
+	
+	#countdown {
+		text-align: center;
+		margin: auto;
+		display: block;
+		margin-bottom: 10px;
+	}
+	
+	#starter {
+		margin: auto;
+		display: block;
+		width: 100%;
+		font-size: 40px;
+		margin-bottom: 10px;
+		max-width: 300px;
+		width: 90%;
+	}
+	
+	#coordinates {
+		text-align: center;
+		margin: auto;
+		display: block;
+	}
+</style>
+
+</html>
