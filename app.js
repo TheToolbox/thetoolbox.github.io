@@ -16,10 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 	var timer;
 	function startTimer() {
-		timer = setTimeout(timeIsUp,10000);
+		timer = Date.now();
+		setInterval(updateTime,10000);
 	}
 	
-	function timeIsUp() {
+	function updateTime() {
 		alert("BAD THINGS");
 	}
 });
