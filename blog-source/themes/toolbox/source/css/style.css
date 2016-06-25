@@ -1,10 +1,17 @@
-@import 'https://fonts.googleapis.com/css?family=Droid+Sans+Mono';
-@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@import 'https://fonts.googleapis.com/css?family=Anonymous Pro';
 
 body {
-    font-family: 'Share Tech Mono','Consolas','monospace';
+    margin-left:10%;
+    margin-right:10%;
+    font-family: 'Anonymous Pro','Consolas','monospace';
     background-color: black;
     color: white;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .bash .prompt time {
@@ -34,11 +41,15 @@ a, link {
 }
 
 code, pre, xmp, plaintext, listing {
-    font-family: 'Share Tech Mono', 'Consolas', 'monospace'
+    font-family: 'Anonymous Pro', 'Consolas', 'monospace'
 }
 
 code {
     color: #D2B;
+}
+
+figure.highlight {
+    overflow-x: overlay;
 }
 
 .highlight table {

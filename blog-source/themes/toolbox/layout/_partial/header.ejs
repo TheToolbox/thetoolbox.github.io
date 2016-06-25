@@ -1,0 +1,6 @@
+<header>
+    <%- partial('line', {timestamp: date(Date.now(),'YYYY/MM/DD hh:mm'), dir: '~', command: 'curl ' + '<a href="http://oett.io" target="_blank">http://oett.io</a>'}) %>
+	<h1>Toolbox's Blog</h1>
+	<%- partial('../_widget/category') %>
+	
+</header>
