@@ -25,8 +25,8 @@ div.bash {
     color: #4E4
 }
 
-not(a, link) {
-    color: #7AF;
+a, link {
+    color: inherit;
 }
 
 .command a {
