@@ -1,0 +1,10 @@
+<div class="article-entry" itemprop="articleBody">
+    <% if (post.excerpt && index){ %>
+      <%- post.excerpt %>
+      <% if (theme.excerpt_link){ %>
+        <a class="more-link" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+      <% } %>
+    <% } else { %>
+      <%- post.content %>
+    <% } %>
+  </div>

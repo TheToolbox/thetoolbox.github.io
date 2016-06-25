@@ -1,0 +1,21 @@
+<%
+if (typeof post === 'undefined') {
+    var post = {
+        date: Date.now()
+    };
+}
+%>
+<div class="bash">
+<span class="prompt">
+[
+    <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished">
+        <%= timestamp %>
+    </time>
+] toolbox@oett.io:
+    <span class="directory">
+        <%- dir %>
+    </span>
+$
+</span>
+<span class="command"><%- command %></span>
+</div>

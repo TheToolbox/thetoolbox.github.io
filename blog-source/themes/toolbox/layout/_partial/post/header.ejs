@@ -1,0 +1,17 @@
+<% if (post.categories && post.categories.length){ %>
+    <% var dir = '/' + list_categories(post.categories, {
+      show_count: false,
+      class: 'category',
+      style: 'none',
+      separator: '/'
+    }) %>
+<% } else { var dir = '~';} %>
+
+
+  <% if (post.link) { %>
+    <%- partial('../line', {timestamp: date(post.date,'YYYY/MM/DD hh:mm'), dir: dir, command: 'curl ' + '<a href="' + url_for(post.link) + '" target="_blank">' + post.title + '</a>'}) %>
+  <% } else if (index) { %>
+    <%- partial('../line', {timestamp: date(post.date,'YYYY/MM/DD hh:mm'), dir: dir, command: '<a href="' + url_for(post.path) + '">' + post.title.split(' ').join('_').toLowerCase() + '</a>'}) %>
+  <% } else { %>
+    <%- partial('../line', {timestamp: date(post.date,'YYYY/MM/DD hh:mm'), dir: dir, command: post.title.split(' ').join('_').toLowerCase()}) %>
+  <% } %>

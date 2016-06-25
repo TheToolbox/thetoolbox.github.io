@@ -1,0 +1,6 @@
+<% if (!index && post.comments && config.disqus_shortname){ %>
+    <section id="comments">
+        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+<% } %>

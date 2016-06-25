@@ -1,0 +1,38 @@
+<footer>
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <%- partial('_partial/line', {command: 'clear; ls; clear; ls; clear; echo "$FOOTER"', timestamp: date(new Date(), 'YYYY/MM/DD hh:mm'), dir: '~'}) %>
+  <br>
+
+  <nav>
+    <% for (var i in theme.menu){ %>
+      <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+    <% } %>
+  </nav>
+
+  &copy; <%=  date(new Date(), 'YYYY') + ' ' + (config.author || config.title) %>
+</footer>
+
+
+
+
+
+<% if (config.disqus_shortname){ %>
+<script>
+  var disqus_shortname = '<%= config.disqus_shortname %>';
+  <% if (page.permalink){ %>
+  var disqus_url = '<%= page.permalink %>';
+  <% } %>
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<% } %>
+
+<%- js('js/script') %>
+<script>hljs.initHighlightingOnLoad();</script>

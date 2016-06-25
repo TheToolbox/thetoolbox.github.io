@@ -1,0 +1,13 @@
+<article id="<%= post.slug %>" class="article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+  <%- partial('post/header') %>
+  <%- partial('post/gallery') %>
+  <%- partial('post/content') %>
+  
+  <a href="<%- post.permalink %>" data-id="<%= post._id %>" class="permalink">^ Permalink ^</a>
+
+  <%- partial('post/comments') %>
+  <!--<%- partial('post/tags') %>-->
+  <%- partial('post/nav') %>
+  <br><br>
+</article>
+

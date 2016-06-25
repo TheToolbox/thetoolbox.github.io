@@ -1,0 +1,65 @@
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans+Mono';
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+body {
+    font-family: 'Share Tech Mono','Consolas','monospace';
+    background-color: black;
+    color: white;
+}
+
+.bash .prompt time {
+    color: #D92
+}
+
+.bash .prompt .directory {
+    color: #E4C
+}
+
+div.bash {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #888;
+}
+
+.bash .prompt {
+    color: #4E4
+}
+
+not(a, link) {
+    color: #7AF;
+}
+
+.command a {
+    text-decoration: none; 
+}
+
+code, pre, xmp, plaintext, listing {
+    font-family: 'Share Tech Mono', 'Consolas', 'monospace'
+}
+
+code {
+    color: #D2B;
+}
+
+.highlight table {
+    background-color: #000029;
+    border-width: 1em;
+    border-style: solid;
+    border-color: #000029;
+} 
+
+.highlight .string {
+	color: #f99157;
+}
+
+.highlight .comment {
+	color: #338833;
+}
+
+.highlight .variable {
+	color: #D2B;
+}
+
+.highlight .gutter {
+    color: red;
+}
